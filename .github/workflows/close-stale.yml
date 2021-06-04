@@ -13,3 +13,12 @@ jobs:
     steps:
       - name: Close Stale Issues
         uses: actions/stale@v3.0.19
+        with:
+          stale-issue-message: "This issue has been inactive for 60 days, and will be closed in 7 days. If it should be kept open please comment below 💖"
+          stale-pr-message: "This pr has been inactive for 60 days, and will be closed in 7 days. If it should be kept open please comment below 💖"
+          close-issue-message: "This issue has been closed due to inactivity."
+          close-pr-message: "This PR has been closed due to inactivity."
+          stale-issue-label: stale😴
+          stale-pr-label: stale😴
+          close-issue-label: auto-close⛔
+          close-pr-label: auto-close⛔
